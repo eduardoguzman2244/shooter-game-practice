@@ -1,0 +1,51 @@
+html {
+  overflow: hidden;
+}
+
+.Opponent {
+	animation: rotation 3s infinite linear;
+	-webkit-animation: rotation 3s infinite linear;
+}
+
+.paused .Opponent {
+	animation: none;
+	-webkit-animation: none;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+.gamebutton {
+	border: none;
+	background: #ddd;
+	color: #333;
+	padding: 10px 20px;
+	outline: none;
+	font-family: monospace;
+	cursor: pointer;
+}
+#gameinfo {
+  list-style: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: monospace;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+#gameinfo li {
+  margin: 3px 0;
+}
